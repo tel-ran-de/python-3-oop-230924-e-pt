@@ -25,8 +25,13 @@ class Car:
 def main():
     car = Car("Toyota", 2020)
     print(car.get_model())  # Output: Toyota
+    print(car.get_year())
+    print('\nSet new year')
     car.set_year(2021)
     print(car.get_year())  # Output: 2021
+
+    car.__year = 2022
+    print(car.get_year())
 
 
 if __name__ == "__main__":

@@ -28,6 +28,7 @@
 class Person:
     pass
 
+
 class Rectangle:
     pass
 
