@@ -121,10 +121,10 @@ def main():
     print(calc.new_attr)  # Использование __getattribute__ и __getattr__
     del calc.new_attr  # Использование __delattr__
 
-    # Лог операций
-    print("\nLog of operations:")
-    for entry in calc.log:
-        print(entry)
+    # # Лог операций
+    # print("\nLog of operations:")
+    # for entry in calc.log:
+    #     print(entry)
 
     # Тестирование декоратора
     print(slow_function(1))
