@@ -23,6 +23,8 @@ class EnhancedList:
     def __init__(self, items):
         super().__setattr__('items', items)
         super().__setattr__('log', [])
+        # self.__setattr__('log', [])
+        # self.log = []
         self.call_count = 0
 
     def __setattr__(self, name, value):

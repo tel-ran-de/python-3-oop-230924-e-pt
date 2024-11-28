@@ -22,24 +22,29 @@ class MyClass:
 
 def main():
     # Создание объекта
+    print('Создание объекта')
     obj = MyClass(10)
 
-    # Доступ к существующему атрибуту
-    print(obj.value)  # Output: Getting attribute value\n10
-
-    # Доступ к несуществующему атрибуту
-    print(
-        obj.non_existent_attr)  # Output: Getting attribute non_existent_attr
-    # Attribute non_existent_attr not found, returning default value\nDefault Value
-
-    # Установка атрибута
-    obj.value = 20  # Output: Setting attribute value to 20
-
-    # Удаление атрибута
-    del obj.value  # Output: Deleting attribute value
-
-    # Попытка доступа к удаленному атрибуту
-    print(obj.value)  # Output: Getting attribute value\nAttribute value not found, returning default value\nDefault Value
+    # # Доступ к существующему атрибуту
+    # print('\nДоступ к существующему атрибуту')
+    # print(obj.value)  # Output: Getting attribute value\n10
+    #
+    # # Доступ к несуществующему атрибуту
+    # print('\nДоступ к несуществующему атрибуту')
+    # print(obj.non_existent_attr)  # Output: Getting attribute non_existent_attr
+    # # Attribute non_existent_attr not found, returning default value\nDefault Value
+    #
+    # # Установка атрибута
+    # print('\nУстановка атрибута')
+    # obj.value = 20  # Output: Setting attribute value to 20
+    #
+    # # Удаление атрибута
+    # print('\nУдаление атрибута')
+    # del obj.value  # Output: Deleting attribute value
+    #
+    # # Попытка доступа к удаленному атрибуту
+    # print('\nПопытка доступа к удаленному атрибуту')
+    # print(obj.value)  # Output: Getting attribute value\nAttribute value not found, returning default value\nDefault Value
 
 
 if __name__ == '__main__':
