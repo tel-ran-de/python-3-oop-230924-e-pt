@@ -39,6 +39,7 @@ def my_function2(a, b):
 def main():
     result = my_function(2, 3)
     print(result)
+
     result = my_function2(2, 3)
     print(result)
 
