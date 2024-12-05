@@ -3,13 +3,13 @@ class Person:
         self.name = name
         self.age = age
 
-    def __eq__(self, other):
-        if isinstance(other, Person):
-            return self.name == other.name and self.age == other.age
-        return False
-
-    def __ne__(self, other):
-        return not self.__eq__(other)
+    # def __eq__(self, other):
+    #     if isinstance(other, Person):
+    #         return self.name == other.name and self.age == other.age
+    #     return False
+    #
+    # def __ne__(self, other):
+    #     return not self.__eq__(other)
 
     def __lt__(self, other):
         if isinstance(other, Person):
@@ -42,11 +42,13 @@ def main():
     p3 = Person("Alice", 30)
 
     print(p1 == p3)  # Output: True
-    print(p1 != p2)  # Output: True
-    print(p1 < p2)  # Output: False
-    print(p1 <= p3)  # Output: True
-    print(p1 > p2)  # Output: True
-    print(p1 >= p3)  # Output: True
+    # print(p1 != p2)  # Output: True
+    # print(p1 < p2)  # Output: False
+    # print(p1 <= p3)  # Output: True
+    # print(p1 > p2)  # Output: True
+    # print(p1 >= p3)  # Output: True
+
+    print(p1 == 12)
 
 
 if __name__ == "__main__":

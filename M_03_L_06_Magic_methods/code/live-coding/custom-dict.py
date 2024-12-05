@@ -15,6 +15,25 @@ class CustomDict:
         return repr(self.data)
 
 
+class CustomList:
+    def __init__(self):
+        self.data = []
+        self.add_data = []
+
+    def __getitem__(self, index):
+        return self.data[index], self.add_data[index]
+
+    def __setitem__(self, index, value1, value2):
+        self.data[index] = value1
+        self.add_data[index] = value2
+
+    def __delitem__(self, index):
+        del self.data[index],  self.add_data[index]
+
+    def __repr__(self):
+        return repr(self.data), repr(self.add_data)
+
+
 def main():
     # Тестирование
     cd = CustomDict()

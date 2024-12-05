@@ -16,12 +16,18 @@ class Singleton(metaclass=SingletonMeta):
         self.value = 42
 
 
+class Single_2(metaclass=SingletonMeta):
+    def __init__(self):
+        self.value = 45
+
+
 def main():
     s1 = Singleton()
     s2 = Singleton()
 
     print(s1 == s2)  # Output: True
     print(s1.value)  # Output: 42
+    print(s2.value)  # Output: 42
 
 
 if __name__ == "__main__":
