@@ -13,3 +13,36 @@
 # Класс D должен корректно наследовать от классов B и C.
 # Используйте метод разрешения порядка (MRO) для объяснения порядка вызова методов.
 
+class A:
+    def say_hello(self):
+        print("Hello A")
+
+class B(A):
+    def say_hello(self):
+        super().say_hello()
+        print("Hello B")
+
+class C(A):
+    def say_hello(self):
+        super().say_hello()
+        print("Hello C")
+
+class D(B, C):
+    def say_hello(self):
+        super().say_hello()
+        print("D")
+
+
+d =D()
+d.say_hello()
+print(D.mro())
+
+# def main():
+
+    # w = W()
+    # print(W.__mro__)
+
+
+# if __name__ == "__main__":
+#     main()
+

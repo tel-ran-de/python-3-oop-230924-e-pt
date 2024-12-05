@@ -11,3 +11,30 @@
 # Класс W должен корректно наследовать от классов X, Y и Z.
 # Используйте метод разрешения порядка (MRO) для объяснения порядка вызова конструкторов.
 
+class X:
+    def __init__(self):
+        print("X")
+
+class Y:
+    def __init__(self):
+        print("Y")
+
+class Z:
+    def __init__(self):
+        print("Z")
+
+class W(X, Y, Z):
+    def __init__(self):
+         super().__init__()
+         print("W")
+
+
+
+def main():
+
+    w = W()
+    print(W.__mro__)
+
+
+if __name__ == "__main__":
+    main()
