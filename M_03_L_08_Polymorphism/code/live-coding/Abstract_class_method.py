@@ -6,15 +6,25 @@ class Animal(ABC):
     def speak(self):
         pass
 
+    @abstractmethod
+    def move(self):
+        pass
+
 
 class Dog(Animal):
     def speak(self):
         return "Woof!"
 
+    def move(self):
+        return "Running"
+
 
 class Cat(Animal):
     def speak(self):
         return "Meow!"
+
+    def move(self):
+        return "Walking"
 
 
 def main():
@@ -26,3 +36,9 @@ def main():
 
     # Попытка создания экземпляра абстрактного класса вызывает ошибку
     # animal = Animal()  # Raises TypeError
+
+    print(Animal.__abstractmethods__)
+
+
+if __name__ == "__main__":
+    main()
