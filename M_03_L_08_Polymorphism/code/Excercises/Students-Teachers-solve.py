@@ -70,9 +70,8 @@ def main():
     student1 = Student(name="Alice", age=20, student_id="S001")
     student2 = Student(name="Bob", age=22, student_id="S002")
     teacher = Teacher(name="Mr. Smith", age=35, subject="Math")
-    human1 = Human("John", 25)
     teacher.students = [student1, student2]
-    # teacher.students.append(human1)
+    # teacher.students.append(Human("John", 25))
 
     print(student1)
     print(student2)
