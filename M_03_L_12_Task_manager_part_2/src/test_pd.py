@@ -30,6 +30,11 @@ def main():
     # print('\n')
     # print(df.shape[0])
 
+    df.to_csv('test.csv')
+
+    df = pd.read_csv('test.csv')
+
+
 
 if __name__ == "__main__":
     main()
