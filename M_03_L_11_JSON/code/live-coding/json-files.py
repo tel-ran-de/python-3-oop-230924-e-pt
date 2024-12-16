@@ -21,6 +21,8 @@ def main():
 
     object_to_file(data, 'data.json')
     python_object = file_to_object('data.json')
+    print(type(python_object))
+    print(python_object.keys())
 
 
 if __name__ == '__main__':

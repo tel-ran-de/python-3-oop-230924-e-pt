@@ -1,11 +1,11 @@
 import json
 
 
-def dict_to_json(python_object: dict):
+def dict_to_json(python_object: dict) -> str:
     return json.dumps(python_object)
 
 
-def json_to_dict(json_string: str):
+def json_to_dict(json_string: str) -> dict:
     return json.loads(json_string)
 
 
@@ -18,11 +18,12 @@ def main():
     }
 
     # Преобразование объекта Python в строку JSON
+
     json_string = dict_to_json(data)
-    print(json_string)
+    print(type(json_string))
 
     python_object = json_to_dict(json_string)
-    print(python_object)
+    print(type(python_object))
 
 
 if __name__ == '__main__':
