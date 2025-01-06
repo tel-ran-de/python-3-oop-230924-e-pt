@@ -388,3 +388,5 @@ cython_debug/
 
 # MS PowerPoint temporary files
 ~*.pptx
+/M_03_L_05_Magic_methods/Presentation/img/
+/M_03_L_10_Request/code/live-coding/weather.key
