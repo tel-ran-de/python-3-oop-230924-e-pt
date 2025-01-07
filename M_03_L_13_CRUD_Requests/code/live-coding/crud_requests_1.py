@@ -45,13 +45,15 @@ def main():
 
     response = get_root(address=root_address)
     print(response[0])
-    print(response[1])
+    print(response[1],  end='\n\n')
 
     response = get_task_list(root_address=root_address)
     print(response[0])
+
     for item in response[1]['todos']:
         print(item)
 
+    print('\n\n')
     for i in range(3):
         text = lorem.sentence()
         print(f'Adding new task id={i}: {text}')
@@ -59,12 +61,13 @@ def main():
         print(response[0])
         print(response[1])
 
+    print('\n\n')
     response = get_task_list(root_address=root_address)
     print(response[0])
     for item in response[1]['todos']:
         print(item)
 
-    response = update_task(root_address=root_address, task_id=2, new_text='A new task text')
+    response = update_task(root_address=root_address, task_id=1, new_text='An one new task text')
     print(response[0])
     print(response[1])
 
