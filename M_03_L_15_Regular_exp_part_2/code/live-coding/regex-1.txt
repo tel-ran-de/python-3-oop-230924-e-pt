@@ -1,0 +1,8 @@
+Valid IPs: 192.168.1.1, 255.255.255.255, 10.0.0.1. Invalid IPs: 256.100.100.100, 192.168.1.256.
+Вы можете связаться с нами по телефону (123) 456-7890 или (987) 654-3210. Дополнительный номер: 123-456-7890.
+Сегодняшняя дата: 15/08/2023. Завтра будет 16-08-2023. Прошлая дата: 12/07/2021.
+Пожалуйста, свяжитесь с нами: john_doe@example.com, jane-doe@example.com, support_team@company.org.
+Anna and Bob are friends with Otto and Eve.
+The CEO of IBM gave a talk at the UN today.
+My password is pass123word or pass3245 and my pin is 9876.
+Your credit card valid number is: 1233-1243-5476-3454 or 5634 3234 3243 6576 but not 5634762345760954

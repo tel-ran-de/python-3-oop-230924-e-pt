@@ -1,0 +1,4 @@
+This is #hashtag in text and this is #too12 but not this #32moo
+These are valid ip addresses 255.23.32.17 and 127.0.0.1 but these are incorrect 256.127.0.1 and 127.43.432.12
+Строка с   несколькми     пробелами     и       табуляциями подряд.
+User Anna Gibson with ip address 125.32.43.27 was born at 12.3.1987 and her friend Alex with ip address wes born at 3.10.2015
