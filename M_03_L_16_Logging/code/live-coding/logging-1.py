@@ -4,7 +4,7 @@ import logging
 def main():
     logger = logging.getLogger(__name__)
 
-    logging.basicConfig(level=logging.ERROR)
+    # logging.basicConfig(level=logging.ERROR)
 
     logger.debug('This is DEBUG level message')
     logger.info('This is INFO level message')
@@ -17,11 +17,6 @@ def main():
 def other_func():
     logger = logging.getLogger(other_func.__name__)
     logger.info(f'This is INFO level message from {other_func.__name__}')
-
-    try:
-        raise Exception('This is an exception')
-    except Exception as e:
-        logger.error(f'Exception: {e}', exc_info=True)
 
 
 if __name__ == '__main__':

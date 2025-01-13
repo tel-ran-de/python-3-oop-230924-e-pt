@@ -1,5 +1,5 @@
 class Manager:
-    def __init__(self, name:str):
+    def __init__(self, name: str):
         self.name = name
         self.__task_list = []
 
@@ -10,4 +10,4 @@ class Manager:
         return self.__task_list
 
     def del_task(self, task: str):
-        self.__task_list.remove(task)
+        pass
